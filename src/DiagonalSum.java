@@ -11,3 +11,10 @@ public class DiagonalSum { // Main class definition
 
         // Create a 2D array to hold the matrix elements
         int[][] matrix = new int[size][size]; // Initialize matrix based on size
+        // Prompt the user to enter the elements row by row
+        System.out.println("Enter elements row by row:");
+        for (int i = 0; i < size; i++) { // Loop through rows
+            for (int j = 0; j < size; j++) { // Loop through columns
+                matrix[i][j] = scanner.nextInt(); // Read each element
+            }
+        }
