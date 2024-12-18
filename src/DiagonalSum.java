@@ -18,3 +18,11 @@ public class DiagonalSum { // Main class definition
                 matrix[i][j] = scanner.nextInt(); // Read each element
             }
         }
+        // Calculate the sums of the main and secondary diagonals
+        int mainDiagonalSum = 0; // Initialize sum for main diagonal
+        int secondaryDiagonalSum = 0; // Initialize sum for secondary diagonal
+
+        for (int i = 0; i < size; i++) {
+            mainDiagonalSum += matrix[i][i]; // Add elements of the main diagonal
+            secondaryDiagonalSum += matrix[i][size - 1 - i]; // Add elements of the secondary diagonal
+        }
