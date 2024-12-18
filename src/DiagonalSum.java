@@ -26,3 +26,8 @@ public class DiagonalSum { // Main class definition
             mainDiagonalSum += matrix[i][i]; // Add elements of the main diagonal
             secondaryDiagonalSum += matrix[i][size - 1 - i]; // Add elements of the secondary diagonal
         }
+        // Display the results
+        System.out.println("Main Diagonal Sum: " + mainDiagonalSum); // Print main diagonal sum
+        System.out.println("Secondary Diagonal Sum: " + secondaryDiagonalSum); // Print secondary diagonal sum
+    }
+}
